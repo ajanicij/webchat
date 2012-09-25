@@ -1,0 +1,69 @@
+<html>
+
+<head>
+	<title>WebSocket chat</title>
+	<link rel="stylesheet" type="text/css" href="css/wschat.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.8.21.custom.css"/>
+	<script type="text/JavaScript" src="script/jquery-1.7.2.js"></script>
+	<script type="text/JavaScript" src="script/jquery-ui-1.8.21.custom.min.js"></script>
+	<script type="text/JavaScript" src="script/wschat.lib.js"></script>
+	<script type="text/JavaScript" src="script/wschat.js"></script>
+
+</head>
+
+<body>
+
+<div id="messages">
+</div>
+
+<div>
+<input id="register_name" type="text" value="" name="register_name"/>
+</div>
+
+<div>
+<input id="register_btn" type="button" value="Register"/>
+<input id="unregister_btn" type="button" value="Unregister"/>
+</div>
+
+<div>
+<div id="status">
+</div>
+
+<div>
+<input id="call_msg" type="text" value="" name="call_msg"/>
+</div>
+
+<div>
+<input id="call_btn" type="button" value="Call"/>
+<input id="hangup_btn" type="button" value="Hang Up" class="hidden"/>
+</div>
+
+<div id="inbound_call" class="hidden">
+	<div id="caller_msg">
+	</div>
+</div>
+
+<div id="call_rejected_msg" class="hidden">
+	<div id="call_rejected_title">
+	</div>
+</div>
+
+<!-- area for sending messages -->
+<div>
+	<div>
+		<input type="text" id="message_output"/>
+	</div>
+	
+	<div>
+		<input type="button" id="send_btn" name="Send" value="Send"/>
+	</div>
+</div>
+
+<div>
+For source code go to <a href="https://github.com/ajanicij/webchat">GitHub</a>
+</div>
+
+</body>
+
+</html>
+
